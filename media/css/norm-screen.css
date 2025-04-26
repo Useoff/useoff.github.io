@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of reset */
+
+/* faux Wikipedia logo font */
+/* @font-face { font-family: 'Linux Libertine'; font-style: normal; font-weight: 400; src: local('Linux Libertine'),url(//brick.a.ssl.fastly.net/fonts/linuxlibertine/400.woff) format('woff'); } .fa-wikipedia:before { font-family: 'Linux Libertine', 'Times New Roman', Times, serif; font-weight: 400; content: "W"; } */
+
+body {
+	font: normal normal 400;
+	/*font-size: 80%;*/
+  font-size: 9pt;
+	line-height: 1.5em;
+	/*font-family: Verdana, sans-serif; */
+	font-family: 'cvfont';
+	margin-top: 1em;
+	/*margin-left: 1em;*/
+}
+
+p {
+	position: relative;
+	left: 27%;
+  top: 0.35em;
+	margin-bottom: 0.7em;
+	margin-right: 0;
+	width: 63%;
+}
+
+code {
+	font: normal normal;
+	font-size: 90%;
+	font-family: 'cvfont';
+	font-weight: bold;
+	color: #aaa;
+}
+
+.tmline, .start-tmline, .end-tmline {
+	color: #777777;
+ top: 0.15em;
+}
+
+.tmline:before, .start-tmline:before, .end-tmline::before {
+	border-top: 2em solid #a0ced9;
+	content:"";
+	position: absolute;
+	left: 0;
+	bottom: -0.15em;
+	z-index: -1;
+  width: 100%;
+	border-radius: 1em 1em 1em 1em;
+}
+
+p code {
+	position: absolute;
+	left: -17.25%;
+  /* padding-top: 0.6%; */
+  width: 14%;
+  text-align: center;
+}
+
+ul {
+	position: relative;
+	left: 27%;
+	width: 63%;
+	margin-bottom: 1.5em;
+	margin-top: 1em;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+li {
+	/* empty */
+}
+
+/* Begin of user custom applied style */
+/* li:before {
+	content: "‣";
+	position: absolute;
+	left: 27%;
+} */
+/* End of user custom applied style */
+
+li ul {
+	position: relative;
+	left: 0;
+/*	margin-top: 0.25em; */
+}
+
+h1,h2,h3,h4 {
+	font-weight: 400;
+	font-family: 'cvfont';
+	width: 63%;
+}
+
+h1 {
+	color: #000000;
+	text-align: left;
+	font-size: 3em;
+	line-height: 1em;
+	position: relative;
+	margin-top: 2em;
+	left: 19%;
+	/* padding: .1rem 1rem; */
+  text-shadow: 1px 1px #fff,
+      					1px 2px #ccc;
+}
+
+h1+p {
+	/*subtitle*/
+	color: #000000;
+	font-style: italic;
+	font-size: 110%;
+	line-height: 2em;
+  left: 19%;
+	margin-top: 0.5em;
+	margin-bottom: 0em !important;
+}
+
+h2 {
+	font-size: 1.1em;
+	/* color: #a00; */
+	/* color: #1D49A0; */
+  color: #444444;
+	margin-top: 1.4em;
+  margin-bottom: 0.5em;
+	position: relative;
+	top: 1.4em;
+	text-align: right;
+	width: 15%;
+}
+
+h2:before { 
+  border-top: 1.75em solid #55d6c2; 
+  content:""; margin: 0 auto; /* this centers the line to the full width specified */ 
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */ 
+  top: -0.25em; left: 0; right: 0; bottom: 0; z-index: -1; 
+  width: 105%;
+  border-radius: 0.35em 0.35em 0 0;
+}
+
+h2:after { 
+  border-top: 0.1em solid #55d6c2; 
+  content:""; margin: 0 auto; /* this centers the line to the full width specified */ 
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */ 
+  top: 1.45em; left: 0; right: 0; bottom: 0; z-index: -1; 
+  width: 655%;
+}
+
+h3 {
+	color: #222222;
+	font-size: 1em;
+	line-height: 1.25em;
+	position: relative;
+	top: 15pt;
+	text-align: right;
+	width: 15%;
+}
+
+a {
+	color: inherit;
+	/*text-decoration:none*/
+}
+
+a:hover {
+	color:#39f
+}
+
+#webaddress {
+	margin-top: 0.25em;
+	position: relative;
+  margin-left: 19.25%;
+	color: #aaa;
+	font-family: 'cvfont';
+	font-size: 80%;
+}
+
+#webaddress a {
+	text-decoration: none;
+}
+
+em {
+	/*font-weight: bold; */
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+#address {
+	display: none;
+}
+
+.footer {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+		position: relative;
+		left: 27%;
+		margin-top: 2em;
+		margin-bottom: 7em;
+		margin-right: 0;
+		width: 63%;
+}
+
+#technical {
+	/* Empty */
+}
+
+/*
+@media only screen and (max-width: 480px) {
+	make one column somehow...
+}*/
+
+/* Begin of user custom applied style */
+@font-face {
+  font-family: 'cvfont';
+	src: url('font-awesome/fonts/AvertaDemoPECuttedDemo-Regular.otf');
+  font-weight: normal; 
+  font-style: normal;
+}
+
+#main {
+	width: 82.25em;
+	margin: 0 auto;
+}
+
+#lang-select {
+  position: absolute;
+  width: 100%;
+  margin-top: 0em;
+  right: 5pt;
+  top: 5pt;
+  direction: rtl;
+  position: fixed;
+}
+
+#lang-select a {
+	text-decoration: none;
+}
+
+.line{ 
+  width: 112px; 
+  height: 47px; 
+  border-bottom: 1px solid black; 
+  position: relative; 
+}
+
+.ident_a {
+  position: absolute;
+	left: -2.5%;
+  padding-top: 0.5%;
+}
+
+p .usr-avatar {
+	position: absolute;
+	width: 120px;
+	height: 160px;
+	left: -37.30%;
+	top: -43px;
+	overflow: auto;
+	border-radius: 5%;
+	float: right;
+}
+
+table {
+	line-height: 1.5em;
+	font-family: 'cvfont';
+	position: relative;
+	margin-bottom: 0.7em;
+   top: 0.25em;
+	border: 0;
+}
+
+table p {
+  left: 0;
+  width: 100%;
+  margin-bottom: 0.4em;
+}
+
+.tbl_indent_a {
+	left: 29%;
+  max-width: 61%;
+}
+
+.tbl_normal_left {
+	left: 17%;
+  max-width: 73%;
+  table-layout: fixed;
+}
+
+.tbl_normal {
+	left: 27%;
+  max-width: 63%;
+}
+
+tr {
+	border: 0;
+	border-width: 0;
+	border-color: none;
+}
+
+td {
+	border: 0;
+	border-width: 0;
+	border-color: none;
+	min-width: 1.5em;
+  max-width: 61.5%;
+  padding-right: 0.5em;
+  /* This fix invalid render text size on android chrome */
+  /* See: https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font */
+  max-height: 9999999px;
+  -webkit-text-size-adjust: none; 
+  -moz-text-size-adjust: none; 
+  -ms-text-size-adjust: none;
+}
+
+.pt-timeline {
+  display: none !important;
+}
+
+/*
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+*/
+/* End of user custom applied style */
